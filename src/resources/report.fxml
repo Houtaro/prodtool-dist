@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="593.0" prefWidth="1263.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReportController">
+   <children>
+      <TableView fx:id="record_table" layoutX="15.0" layoutY="48.0" prefHeight="503.0" prefWidth="1234.0">
+        <columns>
+          <TableColumn fx:id="username_column" prefWidth="138.0" style="-fx-alignment: CENTER;" text="Username" />
+          <TableColumn fx:id="activity_column" prefWidth="122.0" style="-fx-alignment: CENTER;" text="Activity" />
+            <TableColumn fx:id="account_name_column" minWidth="0.0" prefWidth="140.0" style="-fx-alignment: CENTER;" text="Account Name" />
+            <TableColumn fx:id="start_time_column" minWidth="0.0" prefWidth="122.0" style="-fx-alignment: CENTER;" text="Start" />
+            <TableColumn fx:id="end_time_column" minWidth="0.0" prefWidth="121.0" style="-fx-alignment: CENTER;" text="End" />
+            <TableColumn fx:id="aht_column" prefWidth="127.0" style="-fx-alignment: CENTER;" text="Total AHT" />
+            <TableColumn fx:id="remarks_column" prefWidth="147.0" style="-fx-alignment: CENTER;" text="Remarks" />
+            <TableColumn fx:id="volume_column" minWidth="0.0" prefWidth="130.0" style="-fx-alignment: CENTER;" text="Volume" />
+            <TableColumn fx:id="process_name_column" minWidth="0.0" prefWidth="186.0" style="-fx-alignment: CENTER;" text="Process Name" />
+        </columns>
+      </TableView>
+      <Button layoutX="1198.0" layoutY="559.0" mnemonicParsing="false" text="Export" />
+      <Button layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#backToMain" text="Back" />
+   </children>
+</Pane>

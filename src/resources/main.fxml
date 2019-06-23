@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="main_panel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="386.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+   <children>
+      <TextField fx:id="activity" layoutX="111.0" layoutY="72.0" prefHeight="25.0" prefWidth="232.0" />
+      <TextField fx:id="account_name" layoutX="111.0" layoutY="116.0" prefHeight="25.0" prefWidth="232.0" />
+      <TextField fx:id="start_time" layoutX="111.0" layoutY="162.0" prefHeight="25.0" prefWidth="232.0" text="MM/DD/YYYY 00:00:00" />
+      <Label layoutX="46.0" layoutY="76.0" text="Activity:" />
+      <Label layoutX="28.0" layoutY="120.0" text="Account name:" />
+      <Label layoutX="30.0" layoutY="166.0" text="Starting Time:" />
+      <Label layoutX="41.0" layoutY="208.0" text="End Time:" />
+      <TextField fx:id="end_time" layoutX="111.0" layoutY="204.0" prefHeight="25.0" prefWidth="232.0" text="MM/DD/YYYY 00:00:00" />
+      <TextField fx:id="aht" layoutX="111.0" layoutY="246.0" prefHeight="25.0" prefWidth="232.0" text="00:00" />
+      <TextField fx:id="remarks" layoutX="111.0" layoutY="288.0" prefHeight="25.0" prefWidth="232.0" />
+      <TextField fx:id="volume" layoutX="111.0" layoutY="331.0" prefHeight="25.0" prefWidth="232.0" />
+      <TextField fx:id="process_name" layoutX="111.0" layoutY="370.0" prefHeight="25.0" prefWidth="232.0" />
+      <Label layoutX="54.0" layoutY="250.0" text="AHT:" />
+      <Label layoutX="43.0" layoutY="292.0" text="Remarks:" />
+      <Label layoutX="45.0" layoutY="335.0" text="Volume:" />
+      <Label layoutX="28.0" layoutY="374.0" text="Process Name:" />
+      <TextField fx:id="username" layoutX="111.0" layoutY="28.0" prefHeight="25.0" prefWidth="232.0" />
+      <Label layoutX="39.0" layoutY="32.0" text="Username:" />
+      <Button fx:id="btn_save" layoutX="111.0" layoutY="411.0" mnemonicParsing="false" onAction="#save" prefHeight="25.0" prefWidth="232.0" text="Save" />
+      <Button fx:id="btn_view_report" layoutX="111.0" layoutY="447.0" mnemonicParsing="false" onAction="#view_report" prefHeight="25.0" prefWidth="232.0" text="View Report" />
+   </children>
+</Pane>
